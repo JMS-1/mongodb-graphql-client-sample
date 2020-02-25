@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "console": "integratedTerminal",
+            "disableOptimisticBPs": true,
+            "envFile": "${workspaceFolder}/.vscode/.env",
+            "name": "Debug",
+            "port": 17002,
+            "protocol": "inspector",
+            "request": "launch",
+            "runtimeArgs": ["run-script", "debug"],
+            "runtimeExecutable": "npm",
+            "smartStep": true,
+            "sourceMaps": true,
+            "type": "node"
+        }
+    ],
+    "version": "0.2.0"
+}

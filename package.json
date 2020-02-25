@@ -1,0 +1,33 @@
+{
+    "dependencies": {
+        "@jms-1/mongodb-graphql-server-sample": "^0.1.2",
+        "apollo-cache-inmemory": "^1.6.5",
+        "apollo-client": "^2.6.8",
+        "apollo-link-http": "^1.5.16",
+        "graphql-tag": "^2.10.3",
+        "node-fetch": "^2.6.0"
+    },
+    "devDependencies": {
+        "@insynergie/eslint-config": "^1.2.1",
+        "@insynergie/prettier-config": "^1.0.0",
+        "@types/mongodb": "^3.3.16",
+        "rimraf": "^3.0.2",
+        "typescript": "^3.8.2",
+        "vfile-message": "^2.0.2"
+    },
+    "eslintConfig": {
+        "extends": "@insynergie"
+    },
+    "license": "MIT",
+    "main": "build/index.js",
+    "name": "@jms-1/mongodb-graphql-client-sample",
+    "prettier": "@insynergie/prettier-config",
+    "repository": "git@github.com:JMS-1/mongodb-graphql-client-sample.git",
+    "scripts": {
+        "build": "rimraf build && tsc",
+        "debug": "node --inspect-brk=17002 build/index",
+        "start": "node build/index",
+        "watch": "rimraf build && tsc -watch"
+    },
+    "version": "0.1.0"
+}
