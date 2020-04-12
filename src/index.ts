@@ -61,7 +61,7 @@ async function run(): Promise<void> {
             },
         })
 
-        for (const book of find.data.books.find) {
+        for (const book of find.data.books.find.items) {
             console.log(`${book.author}: ${book.title} [${book._id}]`)
         }
     } catch (error) {
