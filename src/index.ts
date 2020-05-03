@@ -40,13 +40,15 @@ async function run(): Promise<void> {
             query: gql`
                 query($pageSize: Int, $filter: BookFilterInput) {
                     books {
-                        find(pageSize: $pageSize, filter: $filter) {
-                            _id
-                            author
-                            title
-                            type
-                            reviews {
-                                from
+                        find(pageSize: $pageSize, filter: $filter) { 
+                            items {
+                                _id
+                                author
+                                title
+                                type
+                                reviews {
+                                    from
+                                }
                             }
                         }
                     }
